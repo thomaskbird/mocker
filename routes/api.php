@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,6 @@ Route::get('/users/{id}', [UserController::class, 'get_user']);
 
 Route::get('/posts', [PostController::class, 'get_posts']);
 Route::get('/posts/{id}', [PostController::class, 'get_post']);
+
+Route::get('/products', [ProductController::class, 'get_products']);
+Route::get('/products/{id}', [ProductController::class, 'get_product']);
