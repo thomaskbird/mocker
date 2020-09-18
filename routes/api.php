@@ -30,4 +30,4 @@ Route::get('/users', [UserController::class, 'get_users']);
 Route::get('/users/{id}', [UserController::class, 'get_user']);
 
 Route::get('/posts', [PostController::class, 'get_posts']);
-Route::get('/posts/{id}', [PostController::class 'get_post']);
+Route::get('/posts/{id}', [PostController::class, 'get_post']);
